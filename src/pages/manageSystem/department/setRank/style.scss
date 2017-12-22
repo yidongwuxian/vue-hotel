@@ -1,0 +1,84 @@
+
+#setRank {
+    >div{
+        border:1px solid #e0e0e0;
+        margin:40px 0 0 0;
+        min-height:450px;
+    }
+    .title{
+        background: #f5f5f5;
+        height:39px;
+        line-height: 40px;
+        text-align: left;
+        font-size: 14px;
+        color:#666666;       
+        position: relative;
+        overflow:hidden;
+        .titleText{
+            margin-left:20px;
+        }
+    }
+    .message{
+        margin-top:60px;
+        display: flex;
+        justify-content: center;
+        >ul{
+            width:500px;
+            color:#333;
+            li{
+                height:30px;
+                line-height: 30px;
+                background: #f5f5f5;
+                margin-bottom: 6px;
+                padding:0 20px;
+                display: flex;
+                justify-content: space-between;
+                .iconfont{
+                    font-size: 14px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                    &:hover{
+                        color:#f65859;
+                    }
+                }
+            }
+        }
+    }
+    .btn{
+        width:500px;
+        margin: 0 auto;
+        position: relative;
+        .add{
+            height:28px;
+            border:1px solid #f5595a;
+            text-align: center;
+            line-height: 26px;
+            color: #f5595a;
+            border-radius: 1px;
+            font-weight: 600;
+            cursor: pointer;
+            .iconfont{
+                display: inline-block;
+                transform: translateY(1px);
+                margin-right: 8px;
+                font-size: 16px;
+                font-weight: normal;
+            }
+        }
+        .handle{
+            position: absolute;
+            right:-50px;
+            top:0;
+            .iconfont{
+                font-size: 14px;
+                color:red;
+                margin-left: 10px;
+                line-height: 35px;
+                cursor: pointer;
+                &:last-child{
+                    color:#333;
+                }
+            }
+        }
+    }
+}

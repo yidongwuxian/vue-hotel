@@ -1,0 +1,133 @@
+#order {
+    .main{
+        background: #f5f7f9;
+        padding:10px 20px 20px;
+        min-height: 70vh;
+        position: relative;
+        >div{
+            .title{
+                font-weight: 900;
+                padding: 15px 0;
+                >span{
+                    font-size: 18px;
+                }
+            }
+            .head{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                >p{
+                    font-weight: 900;
+                    font-size: 18px;
+                    padding: 15px 0;
+                }
+                .add{
+                    background: #392071;
+                    color:white;
+                    height:30px;
+                    line-height: 100%;
+                }
+            }
+        }
+        .trainWarp{           
+            border:1px solid #d2cdde;
+            background: #e9e3f5;
+            height:128px;
+            padding:0 20px;
+            .mess{
+                height:69px;
+                border-bottom: 1px solid #d2cdde;
+                display: flex;
+                align-items: center;
+                >span{
+                    margin-right: 20px;
+                    font-size: 16px;
+                    font-weight: 900;
+                    .normal{
+                        font-size: 12px;
+                        color:#999;
+                    }
+                }
+            }
+            .priceDetail{
+                height:58px;
+                display: flex;
+                align-items: center;
+                >p{
+                    margin-right: 16px;
+                    .price{
+                        color:#f55858;
+                        font-weight: 900;
+                    }
+                    &.noTicket{
+                        color:#8a7ea6;
+                        .price{
+                            color:#8a7ea6;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .passengerWarp{
+            border:1px solid #d2cdde;
+            min-height:200px;
+            padding:0 20px;    
+            margin-bottom: 200px;      
+            .nameList{
+                height:66px;
+                display: flex;
+                align-items: center;
+            }
+            table{
+                width:100%;
+                border-collapse: collapse;
+                margin-bottom: 20px; 
+                th{
+                    background: #e9e3f5;
+                    height:40px;
+                    color:#8a7ea6;
+                    text-align: left;
+                    padding-left: 10px;
+                }
+                td{
+                    height:46px;
+                    padding-left: 10px;
+                    border-bottom: 1px solid #e3e4e7;
+                    .del{
+                        font-size: 20px;
+                        cursor: pointer;
+                        color: #392071;
+                        user-select: none;
+                        &:hover{
+                            color:red;
+                        }
+                    }
+                }
+            }
+        }
+        .btnWarp{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom:50px;
+            left:50%;
+            transform: translateX(-70%);
+            .back{
+                cursor: pointer;
+                color:#00b4ff;
+                font-weight: 900;
+            }
+            .submit{
+                background: #f55858;
+                width:280px;
+                height:50px;
+                border-radius: 30px;
+                color:white;
+                font-size: 16px;
+                margin-left: 50px;
+            }
+        }
+    }
+}

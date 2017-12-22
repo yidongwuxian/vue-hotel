@@ -1,0 +1,115 @@
+#manageSystem {
+    >div.tip{
+        width:1180px;
+        height: 40px;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .name{
+            color:#3a2072;
+            font-size: 14px;
+        }
+        .back{
+            display: inline-block;
+            background: #f65859;
+            color:white;
+            width:140px;
+            height:24px;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+        .back:hover{
+            .iconfont{
+                font-size: 16px;
+            }
+        }
+    }
+    >nav{       
+        background: #3a2072;       
+        >div{
+            width:1180px;
+            height: 60px;
+            margin:0 auto;
+            background: url(../../images/home/logo.png) no-repeat left center;
+            display: flex;
+            flex-direction: row-reverse;
+            >ul{
+                display: flex;
+                .activeLi{
+                    background: #8c33be;
+                    .menu{
+                        display: block;
+                    }
+                }
+                >li{
+                    width:130px;                
+                    color:white;
+                    text-align: center;
+                    cursor: pointer;
+                    position: relative;
+                    .title{
+                        display: inline-block;
+                        height:60px;
+                        width:130px; 
+                        color:#fff;
+                        line-height: 60px;                        
+                    }
+                    .menu{                       
+                        transform: translateX(-735px);
+                        width:1600px;                        
+                        line-height: 37px;   
+                        display: none;
+                        position: relative;
+                        .childTitle{
+                            color:#333;
+                            &:hover{
+                                color:#f65859;
+                            }
+                        }
+                        .line{
+                            display: inline-block;
+                            transform: translateY(-1px);
+                            margin:0 15px;
+                            color:#b7b7b7;                           
+                        }
+                        .activeMenu{
+                            color:#f65859;
+                        }
+                    }
+                    >span.iconfont{
+                        position: absolute;
+                        bottom: -6px;
+                        right:58px;
+                        display: none;
+                    }
+                    &:hover{
+                        background: #8c33be;
+                        >span.iconfont{                       
+                            display: inline;
+                        }
+                        .menu{
+                            background: white;
+                            z-index: 100;
+                            display: block;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    >.blank{
+        height:39px;
+        border-bottom:1px solid #3a2072;
+    }
+    >div.childView{
+        width:1180px;
+        margin:0 auto;
+    }
+}
+
+    

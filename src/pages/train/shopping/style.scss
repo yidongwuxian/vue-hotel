@@ -1,0 +1,117 @@
+#shopping {
+    >.main{
+        background: #f5f7f9;
+        padding:0 20px;
+        .queryWarp{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            .queryInput{
+                display: flex;
+                .deptDate{
+                    display: flex;
+                    align-items: center;
+                }
+                .ex{
+                    font-size: 20px;
+                    color:#f55858;                   
+                    cursor: pointer;
+                }
+                >span{
+                    margin-right: 10px;
+                    .deptDateText{
+                        margin-right: 10px;
+                    }
+                    .inputText{
+                        width:208px;
+                    }
+                }
+            }
+            .search{
+                background: #392071;
+                color:white;
+                width:90px;
+                height:30px;
+                line-height: 100%;
+            }
+        }
+        .trainTypeWarp{
+            padding-bottom: 20px;
+            .noLimit{
+                color:#f55858;
+                font-weight: 900;
+            }
+            >span{
+                margin-right: 25px;
+            }
+        }
+        .content{
+            padding-bottom: 20px;
+            .handle{
+                background: #392071;
+                padding:0 20px;
+                height: 40px;
+                display: flex;
+                justify-content: space-between;
+                .sort{
+                    color:white;
+                    display: flex;
+                    align-items: center;
+                    >div{
+                        margin-left: 35px;
+                    }
+                }
+            }
+            .table{
+                >ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    text-align: center;                                      
+                    height:45px;
+                    border-bottom:1px solid #e3e4e7;
+                    li{
+                        width:100px;
+                        color:black;
+                        .gray{
+                            color:#aaa;
+                        }
+                    }
+                    .take,.site{
+                        width:150px;                        
+                    }
+                    .city{
+                        text-align: left;
+                        .start,.end{
+                            padding:0 10px;
+                        }
+                        .start{
+                            color:#392071;
+                        }
+                        .end{
+                            color:#00b4ff;
+                        }
+                    }
+                    .book{
+                        background: #fa0438;
+                        width:80px;
+                        height:27px;
+                        line-height: 100%;
+                        color:white;
+                    }
+                }
+                .tableHead{
+                    background: #e9e3f5;
+                    height:48px;
+                    border:1px solid #d2cdde;
+                    font-weight: 900;
+                    li{
+                        color:#8a7ea6;
+                        border-right: 1px solid #d2cdde;
+                    }
+                }
+            }
+        }
+    }
+}

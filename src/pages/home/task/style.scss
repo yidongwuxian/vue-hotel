@@ -1,0 +1,122 @@
+
+#task {
+    display: flex;
+    .left{
+        width:160px;   
+        min-height:80vh;    
+        background: #f3f3f5;
+        .menu{
+            margin-bottom: 6px;
+            padding:0 1px;
+            li{
+                padding:0 20px;
+                display: flex;
+                justify-content: space-between;
+                height:39px;
+                line-height: 38px;
+                border:1px solid #e2e2e2;
+                margin-bottom:-1px;
+                cursor: pointer;
+                color:#333333;
+                .count{
+                    color:#fa0438;
+                }
+                &.active{
+                    background: #f65859;
+                    color:white;
+                    border-left: 3px solid #392071;
+                    .count{
+                        color:white;
+                    }
+                }
+            }
+        }
+    }
+    .middle{
+        width:750px;
+        flex-grow: 1;     
+        padding:0 10px;
+        background: #efefef;
+        nav{            
+            height:100px;
+            color: white;
+            background: red;
+            background: url(../../../images/task/navLine.png);
+            padding:0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .userMess{
+                display: flex;
+                align-items: center;   
+                padding-right: 40px;            
+                .avatar{
+                    width:68px;
+                    height:68px;
+                    border:5px solid #986ab5;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    background: url(../../../images/task/avatar.jpg) no-repeat center center;
+                    background-size: cover;
+                }
+                .name{
+                    .userName{
+                        font-size: 18px;
+                        font-weight: 600;
+                        .role{
+                            font-size: 12px;
+                        }
+                    }
+                    .companyName{
+                        color:#d8cfe2;
+                        margin-top:5px;
+                    }
+                }
+            }
+            .operations{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-grow: 1;
+                border-left: 1px solid #8362a4;
+                padding-left: 40px;
+                a{
+                    color:white;
+                }
+                .setting{
+                    text-align: center;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    .iconfont{
+                        font-size:24px;
+                    }
+                    &:hover{
+                        color:#57a3f3;
+                    }
+                }
+                .travelRequest{
+                    width:118px;
+                    height:30px;
+                    border:1px solid white;
+                    text-align: center;
+                    line-height: 30px;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    transition: 0.2s;
+                    .iconfont{
+                        font-size: 14px;
+                        
+                    }
+                    &:hover{
+                        color:#57a3f3;
+                        border-color: #57a3f3;
+                        .iconfont{
+                            margin-right:5px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

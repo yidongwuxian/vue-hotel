@@ -1,0 +1,260 @@
+#shopping {   
+    .query,.main{
+        background: #f5f7f9;
+        padding:0 20px;
+    }
+    .query{
+        height:74px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .city{
+            width:208px;
+        }
+        .iconfont{
+            font-size: 20px;
+            cursor: pointer;
+            color:#f55858;
+        }
+        .date,.limit{
+            width:148px;
+        }
+        .btnWarp{
+            width:150px;
+            display: flex;
+            flex-direction: row-reverse;
+            .search{           
+                width:90px;
+                background: #392071;
+                color:white;
+            }
+        }
+        
+    }
+    .main{
+        .panel{
+            height:40px;
+            line-height: 40px;
+            background: #392071;
+            display: flex;            
+            justify-content: space-between;
+            padding:0 20px;
+            color:white;
+            .sort{
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .sort{
+                >div{
+                    margin-left: 35px;
+                    cursor: pointer;
+                }
+                
+            }
+        }
+        .content{
+            background: white;
+            padding-bottom: 20px;
+            overflow: auto;
+            .endorseRules{
+                width:400px;
+                height:400px;
+                border:1px dashed #999;
+                background: white;
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%);
+                z-index: 10;
+                .tag{
+                    line-height: 30px;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                .ruleItem{
+                    text-align: left;
+                    padding:10px;
+                    div:first-child{
+                        color:#00b4ff;
+                    }
+                }
+            }
+            .item{
+                height:84px;
+                border-bottom: 1px solid #e3e4e7;
+                padding:0 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                .ruleSign{
+                    background: #00b4ff;
+                    padding:2px;
+                    border-radius: 3px;
+                    color:white;
+                    font-size: 10px!important;
+                }
+                .airline{
+                    min-width:200px;
+                    max-width:200px;
+                    display: flex;
+                    text-align: left;
+                    .airSign{
+                        width:20px;
+                        margin-right: 4px;
+                        img{
+                            width:100%;
+                        }
+                    }
+                    .airlineName{
+                        font-size: 14px;
+                        font-weight: 600;
+                        color:black;
+                    }
+                    .model{
+                        color:#aaa;
+                        line-height: 20px;
+                    }
+                }
+                .routeTime{
+                    min-width: 300px;
+                    max-width: 300px;
+                    display: flex;
+                    
+                    .deptDate,.arrDate{
+                        width:100px;
+                        .time{
+                            font-size: 18px;
+                            font-weight: 900;
+                            color:black;
+                        }
+                    }
+                    .interval{
+                        width:115px;
+                        .duration{
+                            transform: translateY(5px);
+                            color:#aaa;
+                        }
+                        .to{
+                            transform: translateY(-5px);
+                        }
+                    }
+                    .deptDate{
+                        text-align: right;
+                    }
+                    .arrDate{
+                        text-align: left;
+                    }
+                }
+                .food{
+                    width:70px;
+                    position: relative;
+                    .endorse{
+                        text-decoration: underline;
+                        &:hover{
+                            color:#00b4ff;
+                            cursor: pointer;
+                        }
+                    }
+                    
+                }
+                .extraFee{
+                    width:120px;
+                    color:#aaa;
+                    .money{
+                        line-height: 26px;
+                    }
+                }
+                .jiage{
+                    width:160px;
+                    text-align: left;
+                    padding-left: 60px;
+                    .price{
+                        color:#f55858;
+                        font-weight: 600;
+                        font-size: 16px;
+                        
+                        
+                    }
+                    .disCount{
+                        color:black;                        
+                    }
+                }
+                .handle{
+                    max-width:200px;
+                    min-width:200px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .preDing{
+                        width:74px;
+                        height:28px;
+                        line-height:0px;
+                        background: #fa0438;
+                        color:white;
+                    }
+                    .showHide{
+                        color:#00b4ff;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .seatWarp{
+                background: #232a34;
+                .item{
+                    height:70px;
+                    border-bottom: 1px solid #394352;
+                    color:white;
+                    display: flex;
+                    justify-content: space-between;
+                    .cang{
+                        width:530px;
+                        >p{
+                            margin-left:250px;
+                            display: flex;
+                            justify-content: space-between;                           
+                        }
+                    }
+                    .endorse{
+                        width:220px;
+                        >span{
+                            text-decoration: underline;
+                            cursor: pointer;
+                            &:hover{
+                                color:#00b4ff;
+                            }
+                        }
+                        
+                    }
+                    .price{
+                        width:90px;
+                        text-align: left;
+                        font-size: 14px;
+                        color:#f55858;
+                    }
+                    .hand{
+                        width:200px;
+                        display: flex;
+                        .preDing{
+                            width:74px;
+                            height:28px;
+                            line-height:0px;
+                            background: #fa0438;
+                            color:white;
+                            border:none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ivu-spin-fix{
+    background-color:rgba(0,0,0,0.5);
+    position: fixed;
+}
+.ivu-spin-dot{
+    min-width:100px;
+    min-height:100px;
+}

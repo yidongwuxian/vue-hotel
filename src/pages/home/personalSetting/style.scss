@@ -1,0 +1,125 @@
+#personalSetting {
+    .setting{
+        background: white;
+        border:1px solid #dfdede;
+        margin-bottom: 10px;
+        >p.title{
+            height:42px;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:0 20px;
+            span{
+                font-size: 14px;
+            }
+            .iconfont{
+                font-size: 16px;
+                cursor: pointer;
+                &:hover{
+                    color:#f55858;
+                }
+            }
+        }
+        .save{
+            margin-top: 20px;
+            text-align: center;
+            .saveBtn{
+                margin:0 auto;
+                height:30px;
+                width:90px;
+                background: #f55858;
+                color: white;
+                line-height: 100%;
+            }
+        }
+        .main{
+            padding:50px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            >div{
+                >li{
+                    display: flex;
+                    align-items: center;
+                    height:36px;
+                    width:450px;
+                    .tag{
+                        width:100px;
+                        text-align: right;
+                        margin-right: 25px;
+                        .star{
+                            color:red;                            
+                        }
+                    }
+                    .textInput{
+                        width:210px;
+                    }
+                }
+                
+            }
+        }
+        .avatarSet{
+            margin-bottom: 60px;
+            .tip{
+                text-align: center;
+                margin:60px 0 10px;
+                .imgFileLabel{
+                    cursor: pointer;
+                    border:1px solid #cdcdcd;
+                    display: inline-block;
+                    padding:5px 10px;
+                    border-radius: 3px;
+                    transition: 0.3s;
+                    &:hover{
+                        color:#2fa2f5;
+                        border-color: #2fa2f5;
+                    }
+                }
+            }
+            .picture{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 50px;
+                .mainPic{
+                    width:300px;
+                    height:300px;
+                    border:1px dashed #b8cadd;
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                }
+                .minorPic{
+                    margin-left: 40px;
+                    .minor180,.minor100,.minor50,.minor30{
+                        border:1px solid #dfdfdf;
+                        padding:3px;
+                    }
+                    .minor180{
+                        width:180px;
+                        height:180px;
+                    }
+                    .minor100{
+                        width:100px;
+                        height:100px;
+                    }
+                    .minor50{
+                        width:50px;
+                        height:50px;
+                    }
+                    .minor30{
+                        width:30px;
+                        height:30px;
+                    }
+                    .smallMinor{
+                        align-items:flex-end;
+                        >div:not(.lastMinor30){
+                            margin-right:40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

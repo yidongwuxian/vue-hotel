@@ -1,0 +1,84 @@
+
+#login {
+    height: 100vh;
+    background: url(../../images/login/loginBg.jpg) no-repeat center bottom;
+    background-size: cover;
+    >div{
+        height:100%;
+        background: rgba(0,0,0,0.6);
+        overflow:hidden;
+        .main{
+            width: 393px;
+            margin: 0 auto;
+            margin-top:12vh;
+            .title{
+                animation: bg 3s linear;
+                height:18vh;
+                background: url(../../images/login/title.png) no-repeat center top;
+            }
+            .loginContent{
+                
+                height:400px;
+                background: #fff;
+                @include borderRadius(5px);
+                .text{
+                    text-align: center;
+                    height:84px;
+                    line-height: 84px;
+                    font-size: 22px;
+                    color:#666;
+                }
+                >div{
+                    width:330px;
+                    margin:0 auto;                   
+                }
+                .inputDiv{                   
+                    height: 46px;
+                    line-height: 46px;
+                    outline: none;
+                    border:1px solid #dedede;
+                    @include borderRadius(2px);
+                    margin-bottom: 18px;  
+                    display: flex;
+                    .iconfont{
+                        font-size: 20px;
+                        padding:0 12px;
+                    }   
+                    input{
+                        font-size: 14px;
+                        outline: none;
+                        width:100%;
+                    }                                                      
+                }
+                .handle{
+                    display: flex;
+                    justify-content: space-between;
+                    color: #666666;
+                    padding-top:10px;
+                    .forgetPassword{
+                        cursor: pointer;
+                        
+                    }
+                }
+                .ivu-btn-long{
+                    height:46px;
+                    color:#666;
+                    span{
+                        font-size: 16px;
+                    }                   
+                }
+                .loginDiv{
+                    margin-top:12px;
+                    .ivu-btn-long{
+                        background: #f55858;
+                        color:white;
+                    }
+                }
+                .signDiv{
+                    margin-top:20px;
+                }
+                
+            }
+        }
+    }
+}

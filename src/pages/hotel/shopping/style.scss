@@ -1,0 +1,330 @@
+#shoppingStl {
+	.w1140{
+		width:1140px;
+		margin:0 auto;
+		background-color:#fff;
+	}
+	.mt5 {
+	    margin-top: 5px;
+	}
+	.mr10{
+		margin-right:10px;
+	}
+	.ivu-radio-group{
+		margin:-3px 0 0 15px;
+	}
+	.ivu-checkbox-group{
+		margin-left:15px;
+		float:left;
+	}
+	.main{
+		margin:0 20px;
+		.searchBox {
+		    padding-top: 20px;
+		    overflow:hidden;
+		    .selectWarp{
+		    	display:inline-block;
+		    	width:172px;
+		    	line-height:30px;
+		    	margin-right:10px;
+		    }
+		    .inputWarp{
+		    	display:inline-block;
+		    	width:172px;
+		    	line-height:30px;
+		    	border:1px solid #dedede;
+		    	margin-right:10px;
+		    	>div{
+		    		position:relative;
+		    		.shoppIco{
+		    			position:absolute;
+		    			left:5px;
+		    		}
+		    		.input_name{
+		    			width:100%;
+		    			height:30px;
+		    			line-height:30px;
+		    			text-indent:0.2rem;
+		    			border: 1px solid #fff;
+    					border-radius: 3px;
+		    		}
+		    	}
+		    }
+		    .inputItem{
+		    	display:inline-block;
+		    	margin-right:10px;
+		    }
+		}
+		.search_item {
+			width: 258px;
+		    border: 1px solid #8db9ef;
+		    background-color: #FFF;
+		    float: left;
+		    margin-right: 8px;
+		    color: #999;
+		    font-size: 14px;
+		    line-height: 32px;
+		    @media (min-width: 1600px){
+		    	width: 318px;
+		    }
+		    >label {
+			    height: 32px;
+			    display: block;
+			    padding: 0 2%;
+			    overflow: hidden;
+			    >span {
+				    float: left;
+				}
+			}
+			.input_f16 { 
+			    margin-left: 10px;
+			    color: #555;
+			}
+		}
+		.search_date {
+		    width: 496px;
+		    @media (min-width: 1600px){
+		        width: 546px;
+		    } 
+		    .br {
+			    border-right: 1px solid #CDE;
+			    margin-right: -1px;
+			}
+			.left {
+			    width: 46%;
+			    position: relative;
+			}   
+		}
+		.input_termini {
+		    display: block;
+		    margin-left: 50px!important;
+		    width: 70%;
+		}
+		.input_f16 {
+		    height: 31px;
+		    font: 16px/30px 'Microsoft Yahei';
+		}
+		.btn_search_w1 {
+			display:block;
+		    width: 90px;
+		    height: 30px;
+		    line-height: 30px;
+		    text-align:center;
+		    font-size: 14px;
+		    background-color: #392071; 
+		    border-radius:5px;
+		    color:#fff; 
+		    cursor:pointer;
+		}
+		.filter_box{
+			clear:both;
+			margin:20px 0;
+			background-color:#e9e3f5;
+			border:1px solid #d2cdde;
+			overflow:hidden;
+			.filter_item {
+				clear:both;
+			    position: relative;
+			    line-height: 20px;
+			    .filter_unlimited {
+				    text-align: center;
+				    float: left;
+				    cursor: pointer;
+				    color: #ff5555;
+				}
+				.filter_limited {
+					text-align: center;
+				    float: left;
+				    cursor: pointer;
+					color:#333;
+				}
+			    .filter_title {
+			    	width:100px;
+				    float: left;
+				    padding: 8px 10px;
+				    font-size: 14px;
+				    .filter_ico{
+				    	color:#c1b6dc;
+				    	margin-right:5px;
+				    }
+				}
+				.filter_option_box{
+					padding:8px 0 0;
+					.filter_option>.filter_posi_show{
+						width:80%;
+						margin:0 0 0 100px;
+					}
+				}
+				.fliter_custom{
+					display:inline-block;
+					margin-left:15px;
+					.fliter_custom_txt{
+						width:78px; 
+						height:22px;
+						line-height:22px;
+					}
+					.fliter_custom_span{
+						color:#333;
+					}
+					.filter_btn{
+						margin-left:10px;
+						width:58px;
+						height:22px;
+						line-height:22px;
+						text-align:center;
+						color:#392071;
+						border:1px solid #392071;
+						background:none;
+						border-radius:5px;
+						cursor:pointer;
+					}
+				}
+			}
+			.filter_posi_type {
+			    margin: 0 40px 5px 60px;
+			    height: 25px;
+			    >li {
+				    float: left;
+				    margin-left:33px;
+				    color:#2d8cf0;
+				    font-weight:bold;
+				    cursor: pointer;
+				}
+			}
+		}
+		.hlist_main{
+			clear:both;
+			width: 717px;
+			.h_item {
+				background-color:#fff;
+			    border-bottom: 1px solid #DDD;
+			    padding-bottom: 15px;
+			    padding-top: 15px;
+			    .to_detail a {
+				    display: block;
+				    border: 1px solid #392071;
+				    background-color: #FFF;
+				    width: 85px;
+				    height: 28px;
+				    border-radius: 2px;
+				    margin: 10px auto 0;
+				    color:#392071;
+				    line-height: 28px;
+				    border-radius:4px;
+				    font-family: "Microsoft Yahei";
+				}
+				.to_detail a:hover {
+				    border: 1px solid #392071;
+				    background-color: #392071;
+				    color:#fff;
+				}
+			}
+			.h_info_pic {
+			    width: 120px;
+			    height: 120px;
+			    float: left;
+			    position: relative;
+			}
+			.h_info_text {
+			    margin-left: 140px;
+			    height: 130px;
+			    .h_info_pri {
+				    width: 155px;
+				    height: 130px;
+				    float: right;
+				    text-align: center;
+				    position: relative;
+				    .c666 {
+					    vertical-align: text-bottom;
+					    font-size: 14px;
+					    color:#f55858;
+					}
+					.cf55 {
+					    vertical-align: 2px;
+					    color:#333;
+					}
+				}
+			}
+			.pagelist{
+				width: 700px;
+				padding:0 auto;
+				text-align:center;
+				background-color:#fff;
+				@media (min-width: 1600px){
+					width: 730px;
+				}
+				.page{
+					margin:10px 0;
+				}
+			}
+		}
+		.h_pri_num {
+		    font: 30px Arial;
+		    color: #F55;
+		}
+		.h_info_base {
+		    margin-right: 140px;
+			>p{
+				
+				
+				 >a {
+				    display: inline-block;
+				    max-width: 240px;
+				    font: 15px Microsoft Yahei;
+				    vertical-align: middle;
+				    white-space: nowrap;
+				    text-overflow: ellipsis;
+				    overflow: hidden;
+				    color:#392071;
+				}
+			}
+		}	
+		.h_info_b1{
+			>a{
+				>span{
+					display:inline-block;
+					font-size:14px;
+					color:#00b4ff;
+				}	
+			}
+		}
+		
+		.h_info_b2 {
+			font-size:14px;
+			color:#333;
+		    margin: 8px 0 0 13px;
+		    max-height: 40px;
+		    overflow: hidden;
+		}
+		.h_info_comt {
+		    width: 130px;
+		    float: right;
+		    text-align: center;
+		    border-left: 1px solid #EEE;
+		    border-right: 1px solid #EEE;
+		    height: 100px;
+		}
+		.h_comt_data {
+		    height: 45px;
+		    display: block;
+		    margin: 0 10px;
+		    padding: 0 2px;
+		    >span>b {
+			    color: #37d;
+			    font-weight: normal;
+			}
+		}
+		.h_info_comt_bg {
+		    width: 100px;
+		    height: 29px;
+		    display: block;
+		    >i {
+			    vertical-align: top;
+			}
+		}
+		#allmap{
+			width:350px;
+			height:800px;
+		}	
+	}
+}

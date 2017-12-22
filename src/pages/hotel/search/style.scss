@@ -1,0 +1,76 @@
+#searchStl {
+        width:500px;                
+        margin:14vh auto; 
+        .ml15{
+            margin-left:15px;
+        }
+        .ml20{
+            margin-left:20px;
+        }      
+        .navigation{
+            line-height: 60px;
+            height: 60px;
+            color:white;
+            .index{
+                cursor: pointer;
+                color:white;
+            }
+        }
+        .main{
+            height:400px;
+            background: #f6f7f9;
+            border-radius: 3px;
+            >div{
+                padding:0 20px;
+                .dateWarp{
+                    margin-top: 10px;
+                }
+                .inputWarp{
+                    margin-top:30px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .inputText{
+                        width:100%;
+                    }
+                    .tag{
+                        line-height: 22px;
+                        color:#a9a9a9;
+                    }
+                }
+                .inputWord{
+                    margin-top:10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .inputText{
+                        width:100%;
+                    }
+                    .tag{
+                        display:inline;
+                        line-height: 22px;
+                        color:#a9a9a9;
+                    }
+                }
+                .searchBtn{
+                    margin:40px auto;
+                    width:280px;
+                    height:40px;
+                    background: #f65859;
+                    text-align: center;
+                    line-height: 40px;
+                    color:white;
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
+            }
+            .title{
+                text-align: center;
+                line-height: 48px;
+                background: #392071;
+                color:white;
+                font-size: 16px;
+            }
+        }
+ 
+}

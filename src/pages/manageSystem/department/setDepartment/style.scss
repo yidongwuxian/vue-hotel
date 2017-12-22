@@ -1,0 +1,75 @@
+
+#setDepartment {
+    >div{
+        border:1px solid #e0e0e0;
+        margin:40px 0 0 0;
+        min-height:360px;
+    }
+    .title{
+        background: #f5f5f5;
+        height:39px;
+        line-height: 40px;
+        text-align: left;
+        font-size: 14px;
+        color:#666666;       
+        position: relative;
+        overflow:hidden;
+        .titleText{
+            margin-left:20px;
+        }
+        .add{
+            font-size: 16px;
+            position: absolute;
+            right: 20px;
+            cursor: pointer;
+            &:hover{
+                color:#f55858;
+            }
+        }
+    }
+    /*部门列表部分*/
+    .departmentList{        
+        padding:60px 0 40px 0;    
+        margin-left:40%; 
+    }
+    /*新增部门部分*/
+    .addMessage{
+        display: flex;
+        justify-content: center;
+        ul{
+            margin-top:60px;
+            >li{
+                height:50px;
+                display: flex;
+                align-items: center;
+                .ivu-input-wrapper{
+                    width:300px;
+                }
+            }
+        }
+        
+        .tag{
+            text-align: right;
+            width:172px;
+            .star{
+                color:#f55858;
+                font-size: 14px;
+            }
+        }
+        .content{
+            margin-left:35px;
+            
+        }
+        .btn{
+            text-align: center;
+            margin:40px 0 60px 0;
+            .submit{
+                width:90px;
+                height:30px;
+            }
+            .back{
+                margin-left:10px;
+            }
+        }
+    }   
+}

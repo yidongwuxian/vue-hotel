@@ -1,0 +1,208 @@
+
+#order {
+    padding-bottom: 20px;
+    > .main {
+        padding: 20px;
+        background: #f5f7f9;
+        .content {
+            display: flex;
+            justify-content: space-between;
+            .pass {
+                flex-grow: 1;
+                .title {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                input[type=text] {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    font-size: 14px;
+
+                }
+                ::-webkit-input-placeholder {
+                    color: #bbbec4;
+                }
+                .passengers {
+
+                    .xinzeng {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .add {
+                            width: 100px;
+                            height: 30px;
+                            cursor: pointer;
+                            background: #392071;
+                            color: #aaa;
+                            text-align: center;
+                            line-height: 30px;
+                            border-radius: 1px;
+                            &:hover {
+                                color: white;
+                            }
+                        }
+                    }
+                    .passenger {
+                        border: 1px solid #dedede;
+                        margin: 10px 0;
+                        padding: 0 30px 30px;
+                        position: relative;
+                        background: white;
+                        .del {
+                            font-size: 14px;
+                            position: absolute;
+                            right: 5px;
+                            top: 5px;
+                            cursor: pointer;
+                            &:hover {
+                                color: #f55858;
+                            }
+                        }
+                        .certificate {
+                            display: flex;
+                            .selectCard {
+                                height: 100%;
+                                .ivu-select-placeholder,
+                                .ivu-select-selected-value,
+                                .ivu-select-selection {
+                                    height: 100%;
+                                    line-height: 50px;
+                                    border: none;
+                                    padding: 0;
+                                    box-shadow: none;
+                                    input {
+                                        outline: none;
+                                        border: none;
+                                    }
+                                }
+                            }
+                            .certificateNo {
+                                flex-grow: 1;
+                            }
+                        }
+                        > li {
+                            height: 52px;
+                            border-bottom: 1px solid #e9e3f5;
+                        }
+                    }
+                }
+                .contact {
+                    .contactor {
+                        border: 1px solid #dedede;
+                        margin-top: 10px;
+                        padding: 0 30px 30px;
+                        background: #ffffff;
+                        > li {
+                            height: 52px;
+                            border-bottom: 1px solid #e9e3f5;
+
+                        }
+                    }
+                }
+            }
+            .order {
+                > div {
+                    width: 398px;
+                    border: 1px solid #d2cdde;
+                    background: #e9e3f5;
+                    margin-left: 20px;
+                    padding: 0 20px;
+                    > div {
+                        border-bottom: 1px solid #d6cee7;
+                        &.route {
+                            padding: 40px 0;
+                            text-align: center;
+                            .survey{
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+                            .airline{
+                                color:#8a7ea6;
+                            }
+                            .detail{
+                                margin-top:25px;
+                                display: flex;
+                                justify-content: center;
+                                .to{
+                                    width:110px;
+                                    .duration{
+                                        color:#998eb2;
+                                    }
+                                    img{
+                                        transform: translateY(-8px);
+                                    }
+                                }
+                                .time{
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                        &.feeDetail{
+                            padding: 40px 0 20px 0;
+                            >div{
+                                &:last-child{
+                                    margin-top:40px;
+                                }
+                                >li{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-bottom: 20px;
+                                    .title{
+                                        color:black;
+                                    }
+                                    .passengerType{
+                                        border-left: 4px solid #8a7ea6;
+                                        padding-left: 4px;
+                                        color:#8a7ea6;
+                                    }
+                                    .fee{
+                                        color:#f55858;
+                                        font-weight: 600;
+                                    }
+                                    .shuliang{
+                                        color:#8a7ea6;
+                                    }
+                                    .tag{
+                                        color:#8a7ea6;
+                                        text-decoration: underline;
+                                        margin-left: 25px;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                        &.priceCount{
+                            border:none;
+                            line-height: 80px;
+                            text-align: right;
+                            color:#f55858;
+                            font-size: 24px;
+                            font-weight: 600;
+                            >span:first-child{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn {
+            margin: 60px 0;
+            .payBtn {
+                margin: 0 auto;
+                width: 280px;
+                height: 50px;
+                border-radius: 25px;
+                background: #f55858;
+                text-align: center;
+                line-height: 50px;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+    }
+}

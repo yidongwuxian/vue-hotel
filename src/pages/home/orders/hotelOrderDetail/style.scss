@@ -1,0 +1,73 @@
+#hotelOrderDetail {
+    >div{
+        padding:0 20px 20px 20px;
+        background: white;
+        header{
+            display: flex;
+            font-size: 12px;
+            height:80px;
+            align-items: center;
+            border-bottom: 1px solid #e4e4e6;
+            b{
+                margin-right: 36px;
+            }
+        }
+        .payMess,.hotelMess,.guestMess,.connectMess,.logMess{
+            border:1px solid #e4e4e4;
+            table{
+                width:100%;
+                border-collapse: collapse;
+                font-size: 12px;
+            }
+            th{
+                background: #eff4f7;
+                height:36px;
+                font-weight: normal;
+                text-align: left;
+                padding-left: 20px;
+            }
+            td{
+                height:54px;
+                padding-left: 20px;
+            }
+        }
+        .payMess{
+            height:158px;    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            p{
+                margin-bottom: 5px;
+            }
+            .smallFont{
+                font-size: 12px;
+            }
+            .money{
+                font-size: 18px;
+                color:red;
+            }       
+        }
+        .hotelMess{
+            
+        }
+        .guestMess{
+            
+        }
+        .connectMess{
+            
+        }
+        .logMess{
+            
+        }
+        .backClass{
+            margin:30px auto 0;
+            text-align:center;
+            .preDing{
+                width:100px;
+            }
+        }
+    }
+}
+

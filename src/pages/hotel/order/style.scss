@@ -1,0 +1,298 @@
+#orderStl {
+	.w1140{
+		width:1140px;
+		margin:0 auto;
+		background-color:#f5f7f9;
+	}
+	.line-ds {
+	    border-top: 1px dashed #cde;
+	    width: 93%;
+	    margin: 0 25px;
+	    @media (min-width: 1600px){
+	    	margin: 0 60px;
+    		width: 87%;
+	    }
+	}
+	.edit_booking_wrap {
+	    width: 683px;
+	    margin:0 20px 100px;
+	    overflow: hidden;
+	}
+	.booking_sinf {
+	    .booking_box{
+	    	width:692px;
+	    	border:1px solid #dedede;
+	    	background-color:#fff;
+	    	padding:10px 28px 28px;
+	    	overflow:hidden;
+	    	.booking_line{
+	    		padding-top:20px;
+    			border-bottom:1px dashed #f0f0f0;
+    			&:last-child{
+    				border:none;
+    			}
+    		}
+	    	>div{
+	    		.booking_dl{
+	    			margin:0 0 10px;
+	    		}
+		    	>dl{
+				    >dt{
+				    	float:left;
+				    	width: 60px;
+					    text-align: right;
+					    line-height:35px;
+					    margin-right:25px;
+					    .star {
+						    color: #f55858;
+						    font-size: 14px;
+						}
+				    }
+				    >dd{
+					    float: left;
+					    line-height:30px;
+
+					    >span {
+						    display: inline-block;
+						    vertical-align: middle;
+						}
+						.num-stock {
+						    display: block;
+						    margin:5px 0;
+						    >a{
+							    border: 1px solid #bbb;
+							    display: block;
+							    float: left;
+							    height: 23px;
+							    line-height: 23px;
+							    overflow: hidden;
+							    text-align: center;
+							    vertical-align: top;
+							    width: 23px;
+							    cursor: pointer;
+							    color: #666;
+							    font-size: 14px;
+							}
+							>a:hover{
+								border: 1px solid #bbb;
+							    display: block;
+							    float: left;
+							    height: 23px;
+							    line-height: 23px;
+							    overflow: hidden;
+							    text-align: center;
+							    vertical-align: top;
+							    width: 23px;
+							    cursor: pointer;
+							    color: #666;
+							    font-size: 14px;
+							}
+							.btn-reduce {
+							    border-right: 0 none!important;
+							} 
+							.btn-add {
+							    border-left: 0 none!important;
+							    margin-right: 8px;
+							}
+						}
+					}
+					.booking_txt{
+						width:530px;
+						height:29px;
+						line-height:29px;
+						border-bottom:1px solid #e9e3f5;
+					}
+				}
+	    	}
+	    }
+	    .s_title {
+	    	margin:20px 0;
+		    font-size: 18px;
+		    color:#333;
+		    font-weight:bold;
+		    display: block;
+		}
+		
+		.date_modify{
+			padding-bottom: 5px;
+		}
+		.num_modify{
+			padding-bottom: 5px;
+			.buy-num {
+			    border: 1px solid #ccc;
+			    color: #666;
+			    float: left;
+			    font-size: 14px;
+			    height: 23px;
+			    line-height: 23px;
+			    margin: 0;
+			    outline: 0 none;
+			    padding: 0;
+			    text-align: center;
+			    width: 40px;
+			}
+		}
+		.total_modify {
+		    padding-bottom: 10px;
+		    >dd{
+		    	.price{
+					font-size:12px;
+					color:#f55858;
+					.bold_sty{
+						margin-left:1px;
+						font-size:16px;
+						color:#f55858;
+					}
+				}
+		    }
+		}
+	}
+	.toolbar-right {
+	    background: #f9f9f9;
+	    padding: 0 30px;
+	    text-align: right;
+	    
+		.toolbar-lnk{
+			float:left;
+			margin:20px 0;
+			color:#00b4ff;
+			overflow:hidden;
+		}
+		.toolbar-snk{
+			float:left;
+			margin: 0 20px;
+    		line-height: 103px;
+			color:#00b4ff;
+			cursor:pointer;
+			overflow:hidden;
+		}
+		.toolbar-normal{
+			clear:both;
+			overflow:hidden;
+		}
+	}
+	.comm-right {
+	    float: right;
+		.btn-area {
+		    float: right;
+		    width:282px;
+		    margin:0 auto;
+		    .price-sum {
+			    color: #666;
+			    margin:0 auto;
+			    text-align:center;
+			    >p {
+				    white-space: nowrap;
+				    padding-bottom: 5px;
+				}
+				.priceBtn{
+			    	clear:both;
+				    width: 282px;
+				    line-height:40px;
+				    font-size: 16px;
+				    background-color: #f55;
+				    display: block;
+					border-radius: 45px;
+				    color: #FFF;
+				    text-align: center;
+	    			cursor: pointer;
+			    }
+			    .priceBtn:hover {
+				    color: #fff;
+				    text-decoration: none;
+				    outline:none;
+				}
+				.txt{
+					margin-right:5px;
+					font-size:14px;
+					color:#333;
+				}
+				.price{
+					font-size:12px;
+					color:#f55858;
+					.bold_sty{
+						margin-left:1px;
+						font-size:16px;
+						color:#f55858;
+					}
+				}
+			}
+		}
+	}
+	.hotel_inf{
+		width: 395px;
+	    border:1px solid #d2cdde;
+	    background:#e9e3f5;
+	    margin: 20px 20px 0 0;
+	}
+	.hotel_inf_w {
+	    width: 395px;
+	}
+	.dsider_per_list {
+		margin:15px;
+	    color: #555;
+	    .dsider_per_text{
+	    	>h3{
+	    		color:#333;
+	    		font-size:15px;
+	    	}
+	    	>p{
+	    		color:#333;
+	    		font-size:14px;	
+	    	}
+	    	.blink{ 
+				font-size:12px;
+				color:#8a7ea6;
+			}
+	    }
+	}
+	.dsider_per_pic{
+	    >a{
+	    	display: block;
+	    	>img {
+			    width: 365px;
+			    height: 200px;
+			    -webkit-transition: margin .3s;
+	    		transition: margin .3s;
+			}
+	    }   
+	}
+	.dsider_per_text{
+		>h3{
+			font-size: 14px;
+		    line-height: 22px;
+		}
+		>a{
+    		color: #555;
+		}
+		.room_info {
+		    font-size: 14px;
+		    font-family: Microsoft Yahei;
+		    > b {
+			    font-weight: normal;
+			}
+			>em{
+				font-style: normal;
+				font-weight: normal;
+			}
+		}
+	}
+	.hotel_roominfo {
+	    border-top: 1px solid #d6cee7;
+	    margin: 15px;
+	    >li {
+		    line-height: 22px;
+		    margin-left: 2px;
+		    overflow: hidden;
+		    >span{
+		    	color:#8a7ea6;
+		    	font-size:12px;
+		    }
+		    >em{
+				font-style: normal;
+				font-weight: normal;
+			}
+		}
+
+	}
+}

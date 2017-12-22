@@ -1,0 +1,71 @@
+#companyDispatching {
+    >div{
+        border:1px solid #e0e0e0;
+        margin:40px 0 0 0;
+        min-height:450px;
+    }
+    .title{
+        background: #f5f5f5;
+        height:39px;
+        line-height: 40px;
+        text-align: left;
+        font-size: 14px;
+        color:#666666;       
+        position: relative;
+        overflow:hidden;
+        .titleText{
+            margin-left:20px;
+        }
+        .edit{
+            font-size: 16px;
+            position: absolute;
+            right: 20px;
+            cursor: pointer;
+            &:hover{
+                color:#f55858;
+            }
+        }
+    }
+    .message{
+        >ul{
+            margin-top:60px;
+            >li{
+                height:50px;
+                display: flex;
+                align-items: center;
+                .ivu-input-wrapper{
+                    width:300px;
+                }
+            }
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .tag{
+            text-align: right;
+            width:172px;
+            .star{
+                color:#f55858;
+                font-size: 14px;
+            }
+        }
+        .content{
+            margin-left:35px;
+            >p{
+                width:300px;
+                font-weight: 600;
+            }
+        }
+    }
+    .btn{
+        text-align: center;
+        margin:40px 0 60px 0;
+        .submit{
+            width:90px;
+            height:30px;
+        }
+        .clear{
+            margin-left:10px;
+        }
+    }
+}
