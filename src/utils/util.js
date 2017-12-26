@@ -224,7 +224,6 @@ export const getCityCode = (val) => {
  * 价格范围最小值
  */
 export const setPriceMinRange = (val) => { 
-
 	if(val.indexOf('-')){
 		return val = val.split('-')[0]
 	}else{
@@ -234,18 +233,12 @@ export const setPriceMinRange = (val) => {
 			return val;
 		}
 	}
-	
-		
-	
-	
 } 
 
 /**
  * 价格范围最大值
  */
 export const setPriceMaxRange = (val) => {
-
-	
 	if(val.indexOf('-')){
 		return val = val.split('-')[1]
 	}else{
@@ -255,5 +248,4 @@ export const setPriceMaxRange = (val) => {
 			return val;
 		}
 	}
-	
 }

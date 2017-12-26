@@ -58,7 +58,7 @@
                         <div class="filter_item">
                             <div class="filter_title"><span class="iconfont filter_ico">&#xe603;</span>价格范围</div>
                             <div class="filter_option_box">
-                                <RadioGroup v-model="filterItem.housePrice">
+                                <RadioGroup v-model="housePrice">
                                     <Radio label="">
                                         <span>不限</span>
                                     </Radio>
@@ -77,9 +77,9 @@
                                 </RadioGroup>
                                 <div class="fliter_custom">
                                     <label>自定义</label>
-                                    <input type="text" class="fliter_custom_txt" v-model="filterItem.minCustom" />
+                                    <input type="text" class="fliter_custom_txt" v-model="minCustom" />
                                     <span class="fliter_custom_span">—</span>
-                                    <input type="text" class="fliter_custom_txt" v-model="filterItem.maxCustom" />
+                                    <input type="text" class="fliter_custom_txt" v-model="maxCustom" />
                                 </div>
                             </div>
                         </div>

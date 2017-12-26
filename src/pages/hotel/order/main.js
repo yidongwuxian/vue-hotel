@@ -145,6 +145,7 @@ export default {
 			}
 
 			let detailsResult = JSON.parse(getSStore('DetailItems'));
+			//let DetailsRes    = JSON.parse(getSStore('DetailsRes'));
 			let params = {
 				  "IsCreateOrderOnly": true,
 				  "OrderValidation": null,
@@ -184,7 +185,8 @@ export default {
 				  "RatePlanId": this.RatePlanId,
 				  "RoomTypeId": this.RoomTypeId,
 				  "SupplierCardNo": null,
-				  "TotalPrice": this.roomRate || 0
+				  "TotalPrice": this.roomRate || 0,
+				  "HotelName":  this.hotelInfo.name
 			};
 
 			//发送数据 start			

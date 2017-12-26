@@ -21,13 +21,13 @@ export default {
 			//查询条件 start
 			filterItem:{
 				region: '',
-				housePrice: '',
 				fliterStar: '',
-				minCustom: '',
-				maxCustom: '',
 				priceMinRange: '',
 				priceMaxRange: ''
 			},
+			housePrice: '',
+			minCustom: '',
+			maxCustom: '',
 			//查询条件 end
 			cityCodes: [],
 			flag: 0,
@@ -51,13 +51,32 @@ export default {
 			/*禁用input*/
 			disabledInput:false,
 			/*城市代码数组*/
-			cityList: []
+			cityList: [],
+			/*价格区间*/
+			priceRange:false
 		}
 	},
 	computed: {
 		
 	},
 	watch:{
+		'housePrice':function(val){
+			
+				this.priceRange = false;
+				console.log('housePrice:'+val);
+			
+		},
+		'minCustom': function(val){
+			
+			console.log('minCustom:'+val);
+			this.priceRange = true;	
+			
+		},
+		'maxCustom': function(val){
+			
+			console.log('maxCustom:'+val);
+			this.priceRange = true;
+		}
 	},
 	methods: {
 		//初始化城市代码 start
@@ -139,37 +158,36 @@ export default {
 		},
 		//设置请求参数
 		setParams(){
+			
+			//判断价格范围是自定义价格还是其它
+			if(this.priceRange === true){
+				this.filterItem.priceMinRange  = setPriceMinRange(this.minCustom)
+				this.filterItem.priceMaxRange  = setPriceMinRange(this.maxCustom)
+			}else{
+				this.filterItem.priceMinRange  = setPriceMinRange(this.housePrice)
+				this.filterItem.priceMaxRange  = setPriceMaxRange(this.housePrice)
+			}
 
-				if(this.filterItem.minCustom != '' || this.filterItem.maxCustom != '' || (this.filterItem.minCustom != '' && this.filterItem.maxCustom != '') ){
-					this.filterItem.priceMinRange  = setPriceMinRange(this.filterItem.minCustom)
-					this.filterItem.priceMaxRange  = setPriceMinRange(this.filterItem.maxCustom)
-				}
-
-				if(this.filterItem.housePrice !='' && (this.filterItem.minCustom == '' || this.filterItem.maxCustom == '' || (this.filterItem.minCustom == '' && this.filterItem.maxCustom == ''))  ){
-					this.filterItem.priceMinRange  = setPriceMinRange(this.filterItem.housePrice)
-					this.filterItem.priceMaxRange  = setPriceMaxRange(this.filterItem.housePrice)
-				}
-
-				let tempObj = {
-					supplierId:   "ELONG",
-					cityCode:     this.shoppingItem.SelCode,
-					pageIndex:    1,
-					pageSize:     20,
-					checkinDate:  formatDate(this.shoppingItem.checkIn),
-					checkoutDate: formatDate(this.shoppingItem.checkOut),
-					//星级
-					starRate:     this.filterItem.fliterStar,
-					//关键词
-					keyword:      this.shoppingItem.keyword,
-					//地区
-					districtCode: this.filterItem.region,
-					//价格最低范围
-					minPrice:     this.filterItem.priceMinRange,
-					//价格最高范围
-					maxPrice:     this.filterItem.priceMaxRange,
-					roomNumber:   1
-				};
-				return tempObj;
+			let tempObj = {
+				supplierId:   "ELONG",
+				cityCode:     this.shoppingItem.SelCode,
+				pageIndex:    1,
+				pageSize:     20,
+				checkinDate:  formatDate(this.shoppingItem.checkIn),
+				checkoutDate: formatDate(this.shoppingItem.checkOut),
+				//星级
+				starRate:     this.filterItem.fliterStar,
+				//关键词
+				keyword:      this.shoppingItem.keyword,
+				//地区
+				districtCode: this.filterItem.region,
+				//价格最低范围
+				minPrice:     this.filterItem.priceMinRange,
+				//价格最高范围
+				maxPrice:     this.filterItem.priceMaxRange,
+				roomNumber:   1
+			};
+			return tempObj;
 		},
 		//分页
 		handleChange(index) {
@@ -247,7 +265,7 @@ export default {
 		dataResult(){
 			let tempObj = this.setParams();
 			this.getDataVal(tempObj);
-		},
+		}
 	},
 	components:{
 		breadcrumb,
